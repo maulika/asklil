@@ -135,7 +135,7 @@ padding:0;
 }
 .nav{
 left:0;
-bottom:0;
+bottom:-2px;
 position:fixed; 
 margin:0;
 padding:0;
