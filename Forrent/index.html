@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Home page</title>
+<link rel="stylesheet" href="css/menu.css"/>
+<script type="text/javascript">
+
+function maulika(img){
+document.getElementById('img1').src = img;
+}
+function maulika2(img){
+document.getElementById('img2').src = img;
+}
+function maulika3(img){
+document.getElementById('img3').src = img;
+}
+function maulika4(img){
+document.getElementById('img4').src = img;
+}
+function maulika5(img){
+document.getElementById('img5').src = img;
+}
+
+
+function regularMenu(){
+window.open("pdfWindow.html");
+}
+function wineMenu(){
+
+}
+
+</script>
+</head>
+
+<body>
+<div class="header">
+<div class="inner-head">
+
+<ul>
+<li><img src="images/menu_headericon_03.png"/></li>
+<li><img src="images/menu_header_03.png"/></li>
+</ul>
+
+</div>
+</div>
+
+
+
+<div class="input-main">
+<div class="input-container">
+<a href="pdfWindow.html" style="text-decoration:none;"><input id="b1" type="button" 
+
+value="REGULAR MENU" /></a>
+<a href="wineMenu.html" style="text-decoration:none;"><input id="b2" type="button" 
+
+value="WINE MENU"/></a>
+
+<a href="dinnerMenu.html" style="text-decoration:none;"><input id="b3" type="button" 
+
+value="DINNER SPECIAL"/></a>
+</div>
+</div>
+
+
+
+
+<div class="footer">
+<div class="nav">
+<ul>
+<li><a href="index.html"><img id="img1" src="menu.png"></a></li>
+<li><a href="catering.html"><img id="img2" name="img2" onmouseover="maulika2('cater.png')" onmouseout="maulika2('catering_03.png')" src="catering_03.png"/></a></li>
+<li><a href="#"><img id="img3" onmouseover="maulika3('order.png')" onmouseout="maulika3('order_03.png')" src="order_03.png"/></a></li>
+<li><a href="direction.html"><img id="img4" onmouseover="maulika4('direct.png')" onmouseout="maulika4('direction_03.png')" src="direction_03.png"/></a></li>
+<li><a href="gallery.html"><img id="img5" onmouseover="maulika5('more.png')" onmouseout="maulika5('more_03.png')" src="more_03.png"/></a></li>
+
+</ul>
+</div>
+</div>
+
+
+
+</body>
+</html>

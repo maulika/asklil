@@ -1,0 +1,126 @@
+/* CSS Document */
+body,html{
+	background-color:#4A1212;
+}
+.header{
+top:0;
+left:0;
+}
+.inner-head{
+left:0;
+}
+
+.footer{
+margin:0;
+padding:0;
+
+}
+.nav{
+left:0;
+bottom:0;
+position:fixed; 
+
+}
+.nav ul{
+float:left;
+margin:0;
+padding:0;
+
+}
+.nav li{
+float:left;
+list-style:none;
+
+}
+@media screen and (max-width: 480px){
+.header{
+margin:0;
+padding:0;
+float:left;
+}
+
+.inner-head ul{
+float:left;
+margin:0;
+padding:0px;
+
+
+}
+.inner-head li{
+float:left;
+list-style:none;
+width:51px;
+
+}
+
+.inner-head img{
+  height: 44px;
+}
+
+.footer{
+margin:0;
+padding:0;
+
+}
+.nav{
+left:0;
+bottom:0;
+position:fixed; 
+margin:0;
+padding:0;
+
+
+}
+.nav ul{
+float:left;
+margin:0;
+padding:0;
+height:50px;
+width:320px;
+}
+.nav li{
+float:left;
+list-style:none;
+width: 64px;
+margin:0;
+padding:0;
+
+}
+
+
+.container{
+width:270px;
+height:450px;
+margin-left:19px;
+
+}
+.grid-view{
+width:270px;
+height:450px;
+float:left;
+/*margin:-12px 0px 55px -30px ;*/
+padding:0;
+}
+
+.grid-view img{
+width:110px;
+height:110px;
+border:5px solid #000000;
+border-radius: 5px;
+
+}
+
+.grid-view ul{
+width:270px;
+float:left;
+margin:0;
+padding:0;
+}
+
+.grid-view li{
+list-style:none;
+width:135px;
+float:left;
+}
+
+}

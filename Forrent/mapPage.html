@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test One</title>
+<link href="libs/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="libs/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="libs/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="libs/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8">
+    document.addEventListener("deviceready", onDeviceReady, false);    // Wait for Cordova to load
+    function onDeviceReady() {// Cordova is ready
+        //alert('*** Device is ready ***');
+    }
+</script>
+
+</head> 
+
+<script>
+
+function init(){
+	onAppResize();
+}
+
+function onAppResize(){
+	
+}
+
+</script>
+
+<body onResize="onAppResize()" onLoad="init()"> 
+    <!-- Sub Menu Page -->
+    <div data-role="page" id="subMenuPage">
+    	 <div id="headerDiv_menu" data-role="header">
+            <h1>Our Location</h1>
+       </div>
+               
+       <div id="contentDiv_subMenu" data-role="content" style="height:320px;">	
+            <ul data-role="listview">
+                <div id="subMenutableDiv">
+                
+				<iframe width="95%" height="310" style="margin-left:10px;margin-top:10px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?hl=en&ie=UTF8&q=Famous+Pino%27s,+NJ&fb=1&gl=us&hq=Famous+Pino%27s,&hnear=0x89c0fb959e00409f:0x2cd27b07f83f6d8d,New+Jersey&cid=0,0,2286433086216011845&t=m&ll=40.333182,-74.305022&spn=0.007851,0.013733&z=16&iwloc=A&output=embed"></iframe>
+                    
+        </div>
+            </ul>		
+       </div>
+    
+    	<div id="footerDiv_subMenu" data-role="footer" data-id="foo5" data-position="fixed">
+            <div data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li><a id="aboutUsBtn"  onclick="location.href='index.html#aboutUsPage';" href="index.html#aboutUsPage" data-icon="aboutUs">About Us</a></li>
+                    <li><a id="menuBtn" onClick="location.href='index.html#menuPage';" href="index.html#menuPage" data-icon="menuIcon" >Menu</a></li>            
+                    <li><a id="cateringBtn"  onclick="location.href='index.html#cateringPage';" href="index.html#cateringPage" data-icon="cateringIcon">Catering</a></li>
+                    <li><a id="orderUsBtn" data-icon="orderIcon" href="#" 
+                        onclick="window.open('https://order-it-on.com/merchantmanagement/merchant_info.php?id=577&sta=Open','_system','location=yes')">Order Online</a>
+                    </li>
+                    <li><a id="contactUsBtn"  onclick="location.href='index.html#contactUsPage';" href="index.html#contactUsPage" data-icon="contactUsIcon" class="ui-btn-active ui-state-persist">Contact Us</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
+        
+    </div>
+    
+        
+    
+</body>
+</html>
